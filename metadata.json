@@ -1,0 +1,6 @@
+{
+  "name": "مكتب PIAZZA للمحاماة - Studio Legale Piazza | الأستاذ ماسيميليانو",
+  "description": "مكتب الاستشارات والخدمات القانونية للمحامي ماسيميليانو بيازا (Avv. Massimiliano Piazza): خدمات واستشارات قانونية للمقيمين بالمغرب أو إيطاليا في الهجرة، الجنسية، العمل، وحوادث السير.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
