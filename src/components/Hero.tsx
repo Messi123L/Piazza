@@ -36,10 +36,16 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Main Hero Content (7 cols) */}
           <div className="lg:col-span-7 space-y-6 text-right">
             {/* Top credibility pill */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-blue-500/30 text-blue-300 text-xs font-semibold shadow-inner">
-              <Scale className="w-4 h-4 text-amber-400" />
-              <span>STUDIO LEGALE PIAZZA • مكتب PIAZZA للمحاماة</span>
-              <span className="bg-blue-600/30 text-blue-200 px-2 py-0.5 rounded text-[11px]">الأستاذ ماسيميليانو (Massimiliano)</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-blue-500/30 text-blue-300 text-xs font-semibold shadow-inner">
+                <Scale className="w-4 h-4 text-amber-400" />
+                <span>STUDIO LEGALE PIAZZA • مكتب PIAZZA للمحاماة</span>
+                <span className="bg-blue-600/30 text-blue-200 px-2 py-0.5 rounded text-[11px]">الأستاذ ماسيميليانو</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-500/50 text-emerald-300 text-xs font-bold shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>الاستشارة القانونية مجانية 100% (Consulenza Gratuita)</span>
+              </div>
             </div>
 
             {/* Main Headline */}
@@ -60,6 +66,10 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               <div className="flex items-center gap-2 text-slate-300 text-sm">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span className="text-emerald-300 font-bold">الاستشارة القانونية الأولية مجانية تماماً</span>
+              </div>
+              <div className="flex items-center gap-2 text-slate-300 text-sm">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>خدمات واستشارات للمقيمين بالمغرب وإيطاليا</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300 text-sm">
@@ -69,10 +79,6 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="flex items-center gap-2 text-slate-300 text-sm">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>استشارات حضورية وعن بعد (واتساب وهاتف)</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300 text-sm">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>تحصيل تعويضات حوادث السير وإصابات العمل</span>
               </div>
             </div>
 
@@ -175,11 +181,15 @@ export const Hero: React.FC<HeroProps> = ({
 
               {/* Quick Consultation button in card */}
               <div className="mt-3">
+                <div className="text-center mb-1 text-[11px] text-emerald-400 font-bold">
+                  ✓ استشارة أولية مجانية بدون أي رسوم مسبقة
+                </div>
                 <button
                   onClick={onOpenBooking}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-all text-center cursor-pointer text-sm shadow-md"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-all text-center cursor-pointer text-sm shadow-md flex items-center justify-center gap-2"
                 >
-                  طلب استشارة مع الأستاذ ماسيميليانو
+                  <Calendar className="w-4 h-4" />
+                  <span>طلب استشارة مجانية مع المحامي</span>
                 </button>
               </div>
             </div>

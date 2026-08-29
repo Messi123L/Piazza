@@ -73,6 +73,9 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="hidden lg:flex items-center gap-1 text-[11px] text-amber-300/90 bg-slate-800 px-2.5 py-0.5 rounded border border-slate-700">
               <span>خدمات قانونية للمقيمين بالمغرب أو إيطاليا</span>
             </div>
+            <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-300 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-700">
+              <span>✦ الاستشارة مجانية</span>
+            </div>
             <a 
               href={`https://wa.me/${OFFICE_CONTACT_INFO.whatsappNumber.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`}
               target="_blank"

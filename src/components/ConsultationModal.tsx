@@ -126,16 +126,21 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
             <X className="w-6 h-6" />
           </button>
 
-          <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold mb-1">
-            <Calendar className="w-4 h-4" />
-            <span>طلب موعد استشارة قانونية (STUDIO LEGALE PIAZZA)</span>
+          <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
+            <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold">
+              <Calendar className="w-4 h-4" />
+              <span>طلب موعد استشارة قانونية (STUDIO LEGALE PIAZZA)</span>
+            </div>
+            <div className="bg-emerald-500 text-slate-950 text-xs font-extrabold px-2.5 py-0.5 rounded-full shadow-xs">
+              ✓ الاستشارة مجانية 100%
+            </div>
           </div>
 
           <h3 className="text-xl sm:text-2xl font-bold text-white">
             مكتب PIAZZA للمحاماة • الأستاذ ماسيميليانو (Massimiliano)
           </h3>
           <p className="text-slate-300 text-xs mt-1">
-            خدمات قانونية للمقيمين بالمغرب أو إيطاليا | الإثنين-الجمعة (10:00-13:00 و 15:00-19:00) • السبت (10:00-14:00)
+            خدمات قانونية للمقيمين بالمغرب أو إيطاليا • استشارة قانونية ودراسة أولية للملف مجاناً
           </p>
         </div>
 

@@ -138,8 +138,13 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
                   <Calendar className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-white">حجز موعد مسبق</h3>
-                  <p className="text-xs text-slate-400">تأكيد فوري ودراسة أولية لملفك</p>
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-bold text-lg text-white">حجز موعد مسبق</h3>
+                    <span className="bg-emerald-500/20 text-emerald-300 text-[11px] font-bold px-2 py-0.5 rounded border border-emerald-500/40">
+                      استشارة مجانية
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-400">تأكيد فوري ودراسة أولية لملفك بدون أي مقابل</p>
                 </div>
               </div>
 
