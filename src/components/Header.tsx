@@ -49,48 +49,48 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-xs transition-all">
       {/* Top utility bar */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
+      <div className="bg-slate-50 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-4 flex-wrap">
             {/* Live Office Status Badge */}
-            <div className="flex items-center gap-2 bg-slate-800/90 px-3 py-1 rounded-md border border-slate-700">
-              <span className={`inline-block w-2 h-2 rounded-full ${liveStatus.isOpen ? 'bg-emerald-400 animate-pulse' : 'bg-blue-400'}`}></span>
-              <span className="font-semibold text-slate-200">
+            <div className="flex items-center gap-2 bg-white px-3 py-1 rounded-md border border-slate-200 shadow-2xs">
+              <span className={`inline-block w-2 h-2 rounded-full ${liveStatus.isOpen ? 'bg-emerald-500 animate-pulse' : 'bg-blue-600'}`}></span>
+              <span className="font-semibold text-slate-800">
                 {liveStatus.messageAr}
               </span>
-              <span className="text-white font-bold text-xs border-r border-slate-700 pr-2 mr-1">
+              <span className="text-slate-900 font-bold text-xs border-r border-slate-200 pr-2 mr-1">
                 {liveStatus.italianTimeFormatted}
               </span>
             </div>
 
-            <div className="hidden sm:flex items-center gap-2 text-slate-400 text-xs">
-              <Clock className="w-3.5 h-3.5 text-blue-400" />
+            <div className="hidden sm:flex items-center gap-2 text-slate-600 text-xs">
+              <Clock className="w-3.5 h-3.5 text-blue-600" />
               <span>الإثنين - الجمعة: 10:00–13:00 | 15:00–19:00 — السبت: 10:00–14:00</span>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-1 text-[11px] text-amber-300/90 bg-slate-800 px-2.5 py-0.5 rounded border border-slate-700">
+            <div className="hidden lg:flex items-center gap-1 text-[11px] text-slate-800 bg-white px-2.5 py-0.5 rounded border border-slate-200 shadow-2xs">
               <span>خدمات قانونية للمقيمين بالمغرب أو إيطاليا</span>
             </div>
-            <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-300 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-700">
+            <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-300">
               <span>✦ الاستشارة مجانية</span>
             </div>
             <a 
               href={`https://wa.me/${OFFICE_CONTACT_INFO.whatsappNumber.replace(/[^0-9]/g, '')}?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
+              className="flex items-center gap-1.5 text-emerald-700 hover:text-emerald-800 font-bold transition-colors"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>واتساب مباشر</span>
             </a>
-            <span className="text-slate-700">|</span>
+            <span className="text-slate-300">|</span>
             <a 
               href={`tel:${OFFICE_CONTACT_INFO.phone}`}
-              className="flex items-center gap-1.5 text-slate-200 hover:text-white font-bold transition-colors"
+              className="flex items-center gap-1.5 text-slate-800 hover:text-blue-700 font-bold transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-blue-400" />
+              <Phone className="w-3.5 h-3.5 text-blue-600" />
               <span dir="ltr">{OFFICE_CONTACT_INFO.phone}</span>
             </a>
           </div>

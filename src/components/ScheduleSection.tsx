@@ -132,30 +132,30 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
           <div className="lg:col-span-5 space-y-6">
             
             {/* Appointment Booking Trigger Box */}
-            <div className="bg-slate-900 text-white rounded-xl p-6 sm:p-7 shadow-xl border border-slate-700 relative overflow-hidden">
+            <div className="bg-white text-slate-900 rounded-xl p-6 sm:p-7 shadow-md border border-slate-200 relative overflow-hidden">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2.5 rounded-lg bg-blue-600 text-white font-bold">
                   <Calendar className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h3 className="font-bold text-lg text-white">حجز موعد مسبق</h3>
-                    <span className="bg-emerald-500/20 text-emerald-300 text-[11px] font-bold px-2 py-0.5 rounded border border-emerald-500/40">
+                    <h3 className="font-bold text-lg text-slate-900">حجز موعد مسبق</h3>
+                    <span className="bg-emerald-100 text-emerald-800 text-[11px] font-bold px-2 py-0.5 rounded border border-emerald-300">
                       استشارة مجانية
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400">تأكيد فوري ودراسة أولية لملفك بدون أي مقابل</p>
+                  <p className="text-xs text-slate-500">تأكيد فوري ودراسة أولية لملفك بدون أي مقابل</p>
                 </div>
               </div>
 
-              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+              <p className="text-slate-600 text-sm leading-relaxed mb-6">
                 اختر التوقيت واليوم المناسب لك ضمن ساعات الدوام، وسيقوم المحامي أو فريق المكتب بتأكيد الموعد وإعلامك بالأوراق المطلوبة.
               </p>
 
               <div className="space-y-3">
                 <button
                   onClick={onOpenBooking}
-                  className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-lg shadow-md transition-all active:scale-95 cursor-pointer text-sm"
+                  className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-lg shadow-md shadow-blue-600/20 transition-all active:scale-95 cursor-pointer text-sm"
                 >
                   <Calendar className="w-4 h-4 text-white" />
                   <span>تحديد موعد استشارة الآن</span>
@@ -165,9 +165,9 @@ export const ScheduleSection: React.FC<ScheduleSectionProps> = ({
                   href={`https://wa.me/${OFFICE_CONTACT_INFO.whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('السلام عليكم، أود الاستفسار عن أقرب موعد متاح للاستشارة القانونية.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 py-3 px-4 rounded-lg border border-slate-700 font-semibold transition-colors text-sm"
+                  className="w-full flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 py-3 px-4 rounded-lg border border-emerald-300 font-semibold transition-colors text-sm"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-400" />
+                  <MessageCircle className="w-4 h-4 text-emerald-600" />
                   <span>استفسار فوري عبر واتساب</span>
                 </a>
               </div>
