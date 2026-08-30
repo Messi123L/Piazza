@@ -58,7 +58,7 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="font-semibold text-slate-200">
                 {liveStatus.messageAr}
               </span>
-              <span className="text-slate-400 text-[11px] border-r border-slate-700 pr-2 mr-1">
+              <span className="text-white font-bold text-xs border-r border-slate-700 pr-2 mr-1">
                 {liveStatus.italianTimeFormatted}
               </span>
             </div>

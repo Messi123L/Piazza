@@ -56,12 +56,6 @@ export const Hero: React.FC<HeroProps> = ({
               </span>
             </h1>
 
-            {/* Sub-headline */}
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-              يقدم <strong className="text-white font-bold">مكتب PIAZZA للمحاماة</strong> بإشراف <strong className="text-white font-bold">الأستاذ ماسيميليانو (Avv. Massimiliano)</strong> استشارات وتمثيلاً قانونياً شاملاً للمقيمين بالمغرب وإيطاليا في 
-              <strong className="text-blue-300"> قضايا الهجرة، تصاريح الإقامة، الجنسية، عقود ونزاعات العمل، حوادث السير، وتأسيس الشركات</strong>.
-            </p>
-
             {/* Key trust bullets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               <div className="flex items-center gap-2 text-slate-300 text-sm">
@@ -144,11 +138,11 @@ export const Hero: React.FC<HeroProps> = ({
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div className="bg-slate-900 p-2.5 rounded-md border border-slate-800 text-center">
                       <div className="text-slate-400 text-[11px] mb-0.5">الفترة الصباحية</div>
-                      <div className="font-bold text-blue-400 text-sm" dir="ltr">10:00 – 13:00</div>
+                      <div className="font-bold text-white text-sm" dir="ltr">10:00 – 13:00</div>
                     </div>
                     <div className="bg-slate-900 p-2.5 rounded-md border border-slate-800 text-center">
                       <div className="text-slate-400 text-[11px] mb-0.5">الفترة المسائية</div>
-                      <div className="font-bold text-blue-400 text-sm" dir="ltr">15:00 – 19:00</div>
+                      <div className="font-bold text-white text-sm" dir="ltr">15:00 – 19:00</div>
                     </div>
                   </div>
                 </div>
@@ -160,7 +154,7 @@ export const Hero: React.FC<HeroProps> = ({
                     <div className="text-slate-400 text-xs mt-0.5">دوام مستمر</div>
                   </div>
                   <div className="bg-slate-900 px-3.5 py-2 rounded-md border border-slate-800 text-center">
-                    <div className="font-bold text-blue-400 text-sm" dir="ltr">10:00 – 14:00</div>
+                    <div className="font-bold text-white text-sm" dir="ltr">10:00 – 14:00</div>
                   </div>
                 </div>
 
